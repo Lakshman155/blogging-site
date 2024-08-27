@@ -1,0 +1,132 @@
+/* Register.css */
+
+/* Resetting default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting global font style and ensuring the body and html take up full height */
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling the main container to use the background image */
+.register-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/reg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+/* Overlay to darken the background image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Container for the registration form */
+.register-box {
+  left: -50px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 2; /* Ensures the form is above the overlay */
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: teal;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: center; /* Align button to the left */
+}
+
+button:hover {
+  background-color: teal;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.password-strength {
+  font-size: 12px;
+  color: #120101;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  .register-box {
+    padding: 15px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+}
+
+.already {
+  text-align: center;
+  margin-top: 10px;
+}

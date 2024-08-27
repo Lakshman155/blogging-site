@@ -1,0 +1,66 @@
+.specific-page-container {
+  background-image: url('./images/b2.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-blogs-container {
+  width: 60%;
+  margin: 20px auto; /* Added margin for spacing */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-blogs-container .my-blog-heading {
+  background-color: teal; /* Teal background */
+  color: white; /* White text */
+  padding: 12px; /* Add padding for better appearance */
+  border-radius: 4px 4px 0 0; /* Rounded corners only on the top */
+  font-size: 25px; /* Font size for the heading */
+  margin: 0 0 20px 0; /* Added margin bottom for spacing */
+  text-align: center; /* Center the text */
+  position: relative; /* Allow positioning */
+  top: -20px; /* Move the heading up */
+  width: calc(100% + 40px); /* Extend width to cover the container's padding */
+  left: -20px; /* Align with container's left edge */
+}
+
+.blog-card3 {
+  max-width: 1000px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px; /* Added margin bottom for spacing between blog cards */
+}
+
+.blog-card3 h2 {
+  margin-top: 0;
+  margin-bottom: 10px; /* Added margin bottom for spacing */
+}
+
+.blog-card3 p {
+  margin: 10px 0; /* Added margin for spacing between paragraphs */
+}
+
+.blog-card3 button {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px; /* Added margin top for spacing above button */
+}
+
+.blog-card3 button:hover {
+  background-color: yellow;
+  color: black;
+}

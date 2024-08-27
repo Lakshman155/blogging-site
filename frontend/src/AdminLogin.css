@@ -1,0 +1,100 @@
+/* AdminLogin.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.a-login-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/reg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.a-login-box {
+  left: -50px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 2;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: center; /* Align button to the center */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}
+
+.redirect {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.redirect a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.redirect a:hover {
+  text-decoration: underline;
+}

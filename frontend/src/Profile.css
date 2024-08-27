@@ -1,0 +1,162 @@
+.specific-page-container {
+  background-image: url('./images/b2.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.liked-posts-container {
+  width: 60%;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: transparent; /* Set to transparent to remove background */
+  border-radius: 8px;
+  box-shadow: none; /* Optional: Remove shadow if not needed */
+}
+
+/* Style for the heading within profile-container */
+.profile-container .profile-heading {
+  background-color: teal; /* Teal background */
+  color: white; /* White text */
+  padding: 12px; /* Add padding for better appearance */
+  border-radius: 4px 4px 0 0; /* Rounded corners only on the top */
+  font-size: 25px; /* Font size for the heading */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center the text */
+  position: relative; /* Allow positioning */
+  top: -20px; /* Move the heading up */
+  width: calc(100% + 40px); /* Extend width to cover the container's padding */
+  left: -20px; /* Align with container's left edge */
+}
+
+/* Adjusted Liked Posts Heading Style */
+.liked-posts-container .liked-posts-heading {
+  background-color: teal; /* Teal background */
+  color: white; /* White text */
+  padding: 12px; /* Add padding for better appearance */
+  border-radius: 4px 4px 0 0; /* Rounded corners only on the top */
+  font-size: 25px; /* Font size for the heading */
+  margin: 0 auto; /* Center the heading */
+  text-align: center; /* Center the text */
+  width: 100%; /* Adjust width as needed */
+  position: relative; /* Allow positioning */ /* Align with the center of the container */
+}
+
+
+.profile-container h1,
+.liked-posts-container h2 {
+  margin-bottom: 100px;
+  width: 50%;
+  font-size: 28px;
+  color: #333;
+}
+
+.user-details p,
+.liked-posts-container .post p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.password-change h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #444;
+}
+
+.password-change form {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-change form input {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.password-change form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.password-change form button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Liked Posts Section Container */
+.liked-posts-container {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Liked Post Styling */
+.liked-posts-section .post {
+  padding: 25px 50px;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;/* Makes the post background transparent */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better separation */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Optional: Adds a light border for definition */
+}
+
+.liked-posts-section .post h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.liked-posts-section .post p {
+  margin-bottom: 15px; /* Adds space between paragraphs */
+  line-height: 1.6;
+  text-align: justify; /* Justifies text in paragraphs */
+  color: black; /* Ensures paragraphs have black text */
+}
+
+.liked-posts-section .post ul, 
+.liked-posts-section .post ol {
+  margin-bottom: 15px; /* Adds space below lists */
+  line-height: 1.6;
+  text-align: justify; 
+}
+
+.liked-posts-section .post li {
+  margin-bottom: 15px; /* Adds space between list items */
+  line-height: 1.6;
+  text-align: justify;  
+  color: black; /* Ensures list items have black text */
+}
+.post-actionss button{
+  background-color: orangered;
+  width: auto;
+}
